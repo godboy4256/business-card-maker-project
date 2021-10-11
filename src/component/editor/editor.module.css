@@ -1,0 +1,11 @@
+@value mediaGreen from '../../common/color.css' ;
+
+.editor{
+    flex-basis: 50%;
+    background-color: tomato;
+}
+
+.title{
+    text-align: center;
+    color: mediaGreen;
+}
