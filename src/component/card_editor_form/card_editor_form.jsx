@@ -3,7 +3,7 @@ import Button from '../button/button';
 import styles from './card_editor_form.module.css'
 
 const CardEditorForm = ({FileInput,card,updateCard,deleteCard}) => {
-    const {id,name,company,theme,title,email,message,fileName,fileURL} = card
+    const {name,company,theme,title,email,message,fileName} = card
     const onChange = (event) => {
         if(event.currentTarget === null){
             return;
@@ -38,7 +38,7 @@ const CardEditorForm = ({FileInput,card,updateCard,deleteCard}) => {
             <input className={styles.input} type="text" name="email" value={email} onChange={onChange}/>
             <textarea className={styles.textarea} name="message" value={message} onChange={onChange}></textarea>
             <div className={styles.fileInput}>
-                <FileInput name={name} onFileChange={onFileChange}/>
+                <FileInput name={fileName} onFileChange={onFileChange}/>
             </div>
             <Button name="Delete" onClick={onSubmit} />
         </form>
