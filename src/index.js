@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.module.css';
 import App from './app';
 import AuthService from './service/auth_service';
+import ImageUploader from './service/image_upload';
+import ImageFileInput from './component/image_file_infut/image_file_input';
 
 const authService = new AuthService()
+const ImageUpload = new ImageUploader()
+
+const FileInput = props => (
+  <ImageFileInput {...props} 
+  imageUpload={ImageUpload}/>
+)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App authService={authService}/>
+    <App authService={authService} FileInput={FileInput}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

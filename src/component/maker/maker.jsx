@@ -6,7 +6,7 @@ import Header from '../header/header';
 import Priview from '../priview/priview';
 import styles from './maker.module.css'
 
-const Maker = ({authService}) => {
+const Maker = ({authService,FileInput}) => {
     const [ cards,setCards ] = useState({
         '1':{
             id:1,
@@ -76,10 +76,12 @@ const Maker = ({authService}) => {
         <Header onLogOut={onLogOut}/>
         <div className={styles.container}>
             <Editor 
+                FileInput={FileInput}
                 addCard={createOrUpdateCard} 
                 cards={cards} 
                 updateCard={createOrUpdateCard}
-                deleteCard={deleteCard}/>
+                deleteCard={deleteCard}
+                />
             <Priview cards={cards}/>
         </div>
         <Footer />
