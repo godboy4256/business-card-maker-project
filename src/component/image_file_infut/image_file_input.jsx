@@ -1,4 +1,3 @@
-import { onLog } from 'firebase';
 import React, { useRef, useState } from 'react';
 import styles from './image_file_input.module.css'
 

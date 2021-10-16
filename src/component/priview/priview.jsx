@@ -9,7 +9,7 @@ const Priview = ({cards}) => {
             <ul className={styles.cards}>
             {
                 Object.keys(cards).map(item => {
-                    return <Card card={cards[item]}/>
+                    return <Card key={item} card={cards[item]}/>
                 })
             }
             </ul>
