@@ -1,4 +1,4 @@
-# 개인 프로젝트 ( 학습 ) 01 : 카카오톡 UI 클론 코딩
+# 개인 프로젝트 ( 학습 ) 03 : 카카오톡 UI 클론 코딩
 
 <p align="center"><img src="https://play-lh.googleusercontent.com/8_0SDfkFXAFm12A7XEqkyChCdGC055J6fC8JR7qynNuO3qNOczIoNHo4U4lad8xYMJOL"></p>
 
